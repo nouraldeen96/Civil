@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image:linear-gradient(rgba(4,9,30,0.25),rgba(4,9,30,0.3)),url(images/bulding.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition: 0.5s;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+
+.logo{
+    margin: 5px 0 0 70px ;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.logo::first-letter{
+    margin-top: 24px;
+    font-size: 75px;
+    color: #FFCD00 ;
+}
+
+
+
+.logo:hover::first-letter{
+    color: black ;
+}
+.logo:hover{
+    color: #FFCD00 ;
+}
+nav ul{
+    margin: 10px 70px 0 0;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    padding:12px ;
+    border-radius: 25px;
+    
+}
+nav ul li a:hover{
+    background-color: #FFCD00;
+    color: black;
+    
+    transition: 0.5s;
+}
+
+.text{
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+   
+    
+}
+
+.text h1{
+    margin: 40x 0;
+    font-size: 50px;
+    font-weight: 600;
+    animation: change 5s ease-out infinite;
+    
+}
+
+@keyframes change{
+    0%{
+        color: transparent;
+    }
+    100%{
+        color:white ;
+    }
+}
+
+
+.text p{
+    margin: 40px 5px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.menu{
+    display: none;
+}
+@media (max-width:700px) {
+    .logo{
+        margin: 10px 0 0 30px ;
+        font-size: 30px;
+        font-weight: 500;}
+
+    .logo::first-letter{
+        margin-top: 30px;
+        font-size: 45px;
+        color: #FFCD00 ;}
+
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        position: relative;
+        z-index: 999;    
+    }
+    nav ul{
+        display: none;
+    } 
+    
+    .menu{
+        display: flex;
+        position: relative;
+        top:10px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    
+    }
+   
+}
+   
